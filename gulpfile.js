@@ -1,4 +1,4 @@
-//npm i -D gulp gulp-cli gulp-sass node sass gulp-autoprefixer gulp-cssnano gulp-concat gulp-uglify gulp-rename gulp-imagemin@7.1.0 gulp-changed gulp-clean browser-sync gulp-sourcemaps imagemin-pngquant imagemin-mozjpeg@9.0.0 imagemin-gifsicle imagemin-svgo@9.0.0
+//npm i -D --save gulp gulp-cli gulp-sass node sass gulp-autoprefixer gulp-cssnano gulp-concat gulp-uglify gulp-rename gulp-imagemin@7.1.0 gulp-changed gulp-clean browser-sync gulp-sourcemaps imagemin-pngquant imagemin-mozjpeg@9.0.0 imagemin-gifsicle imagemin-svgo@9.0.0
 
 const { src, dest, parallel, series, watch } = require("gulp");
 
