@@ -218,3 +218,54 @@ body {
         }
     }
 }
+
+
+.services__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .services__title {
+        font-size: 60px;
+        font-weight: $font-weight-bold;
+        text-align: center;
+        color: $gray;
+    }
+
+
+    .services__icons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+
+        .services__icon-wrapper {
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 192px;
+
+            .services__icon-wrapper-inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 192px;
+                height: 192px;
+                border-radius: 25px;
+            }
+
+            .services__icon-wrapper--dark {
+                background: $services-dark;
+            }
+
+            .services__icon-wrapper--light {
+                background: $services-light;
+            }
+        }
+
+
+    }
+}
