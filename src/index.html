@@ -467,7 +467,59 @@
           </div>
         </div>
       </section>
-
+      <section class="contact__wrapper">
+        <p class="contact__title col-12">Kontakt</p>
+  
+        <div class="contact__wrapper-inner">
+          <form>
+            <div class="contact__column col-lg-6 col-12">
+              <div class="contact__field">
+                <input type="text" id="name" name="name" placeholder="Imię" />
+              </div>
+              <div class="contact__field">
+                <label for="mail"
+                  >Adres e-mail:
+                  <input
+                    type="text"
+                    id="mail"
+                    name="mail"
+                    placeholder="Adres e-mail"
+                  />
+                  <span>Nieprawidłowy adres e-mail</span>
+                </label>
+              </div>
+              <div class="contact__field">
+                <label>
+                  <input type="radio" name="klient" value="klient" checked />
+                  jestem klientem
+                </label>
+                <label>
+                  <input type="radio" name="klient" value="modelka" />
+                  jestem modelką</label
+                >
+              </div>
+            </div>
+            <div class="contact__column col-lg-6 col-12">
+              <div class="contact__field">
+                <select name="pets" id="pet-select">
+                  <option value="">Wybierz temat</option>
+                </select>
+              </div>
+              <div class="contact__field">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="contact__column col-12">
+              <label id="checkbox">
+                <input type="checkbox" name="zgoda" id="zgoda" />Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Deleniti neque omnis vero
+              </label>
+              <button>Wyślij wiadomość</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
     
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
