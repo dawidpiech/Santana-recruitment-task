@@ -90,9 +90,51 @@ body {
             }
         }
 
-        .nav__language-select {
-            width: 80px;
-            height: 32px;
+        .nav__language-select-wrapper {
+            cursor: pointer;
+            position: relative;
+
+            .language-option {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+
+                img {
+                    margin-left: 15px;
+                    height: 16px;
+                }
+
+                span {
+                    width: 10px;
+                    margin: 0 10px 0 0;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+
+            .nav__language-select-selected-option {
+                display: flex;
+                flex-flow: row;
+                gap: 10px;
+                align-items: center;
+                border: 1px solid;
+
+                img:nth-child(3) {
+                    height: 8px;
+                }
+            }
+
+            .nav__language-select-options {
+                display: none;
+                right: 22px;
+                top: 30px;
+            }
+
+            &:hover {
+                .nav__language-select-options {
+                    display: block;
+                }
+            }
         }
 
 
