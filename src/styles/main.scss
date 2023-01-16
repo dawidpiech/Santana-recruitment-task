@@ -32,6 +32,15 @@ body {
 
         @media (max-width: $desktop) {
             flex-direction: column;
+            overflow: hidden;
+        }
+
+        &.open {
+            .nav__list {
+                @media (max-width: $desktop) {
+                    padding: 0 0 55px 0;
+                }
+            }
         }
 
 
@@ -55,7 +64,6 @@ body {
             margin: 0 10px 0 auto;
             display: flex;
             flex-direction: row;
-            overflow: hidden;
             align-items: center;
 
 
@@ -98,10 +106,12 @@ body {
                 display: flex;
                 align-items: center;
                 margin: 15px 0;
+                background-color: $white;
 
                 img {
                     margin-left: 15px;
                     height: 16px;
+                    pointer-events: none;
                 }
 
                 span {
@@ -109,6 +119,7 @@ body {
                     margin: 0 10px 0 0;
                     font-weight: 600;
                     font-size: 15px;
+                    pointer-events: none;
                 }
             }
 
@@ -117,7 +128,13 @@ body {
                 flex-flow: row;
                 gap: 10px;
                 align-items: center;
-                border: 1px solid;
+                border: 1px solid $light-gray;
+                border-radius: 10px;
+                padding: 0 10px;
+
+                p {
+                    margin: 10px;
+                }
 
                 img:nth-child(3) {
                     height: 8px;
@@ -125,9 +142,30 @@ body {
             }
 
             .nav__language-select-options {
+                position: absolute;
                 display: none;
-                right: 22px;
-                top: 30px;
+                padding: 10px 40px 10px 22px;
+                border: 1px solid $light-gray;
+                border-radius: 10px;
+                background-color: $white;
+                margin-top: 8px;
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent transparent $light-gray transparent;
+                    top: -20px;
+                    left: 20px;
+                }
+
+                p {
+                    margin: 0;
+                }
             }
 
             &:hover {
@@ -208,8 +246,14 @@ body {
         .nav__list {
             max-height: 500px;
             height: 100%;
-            ;
+        }
+    }
 
+    .closed {
+        .nav__list {
+            @media (max-width: $desktop) {
+                visibility: hidden;
+            }
         }
     }
 }
