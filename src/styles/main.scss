@@ -363,6 +363,13 @@ body {
     align-items: center;
     background: radial-gradient(circle, rgba(245, 245, 241, 1) 0%, rgba(216, 217, 204, 1) 90%);
     padding: 30px 0 70px 0;
+    font-size: 18px;
+
+    @media (max-width: $mobile) {
+        font-size: 14px;
+    }
+
+
 
     .contact__title {
         font-size: 60px;
@@ -497,10 +504,14 @@ footer {
     .social {
         margin: 0 10px;
         text-decoration: none;
-        width: 20px;
 
         img {
-            filter: invert(22%) sepia(10%) saturate(188%) hue-rotate(149deg) brightness(96%) contrast(89%)
+            filter: invert(22%) sepia(10%) saturate(188%) hue-rotate(149deg) brightness(96%) contrast(89%);
+            width: 40px;
+
+            @media (max-width: $mobile) {
+                width: 25px;
+            }
         }
 
         &:hover {
